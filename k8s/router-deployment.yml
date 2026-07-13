@@ -15,7 +15,7 @@ spec:
         app:  router
     spec:
       containers:
-      - image:  router:v8
+      - image:  router
         name:  router-server
         resources:
           requests:
