@@ -172,7 +172,7 @@ app.post('/create-files', async(req, res) => {
 
             await fs.promises.writeFile(filePath, content,'utf-8');
             return {
-                [filePath.replace(WORKING_DIR + '/', '')]: 'File created successfully',
+                [filePath]: 'File created successfully',
             };
         } catch (err) {
             return {
