@@ -4,7 +4,7 @@ import { k8sCoreV1Api } from "./config.js";
 export async function createPods(sandboxId) {
   const podManifest = {
     metadata: {
-        name: `sandbox-${sandboxId}`,
+        name: `sandbox-pod-${sandboxId}`,
         labels: {
             app:'sandbox',
             sandboxId: sandboxId,
